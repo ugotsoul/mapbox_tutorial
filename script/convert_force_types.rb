@@ -53,4 +53,3 @@ CSV.open('test.csv', 'w') do |csv_out|
     nil
   end
 end
-
