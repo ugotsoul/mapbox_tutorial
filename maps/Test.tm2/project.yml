@@ -1,0 +1,43 @@
+_prefs: 
+  mapid: ugotsoul.d37c30ee
+  saveCenter: false
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 15.293
+  - 50.8476
+  - 4
+description: test map for police force use 2014
+format: "png8:m=h"
+interactivity_layer: full_description_police_force
+layers: null
+maxzoom: 22
+minzoom: 0
+name: my_test_map
+source: "mapbox:///mapbox.mapbox-streets-v5,ugotsoul.a52acafc"
+styles: 
+  - style.mss
+  - labels.mss
+  - roads.mss
+  - full_description_police_force.mss
+template: |-
+  <strong>{{date}}</strong>
+  {{#force_type}}
+  <br /><small>{{force_type}}</small>
+  {{/force_type}}
+  <br />{{#force_type_level}}
+  <small>Force Type Level: {{force_type_level}}</small>
+  {{/force_type_level}}
+  {{#incident_id}}
+  <small>Incident ID: {{incident_id}}</small>
+  {{/incident_id}}
+  {{#beat}}
+  <small>Beat: {{beat}}</small>
+  {{/beat}}
